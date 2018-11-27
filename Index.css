@@ -1,0 +1,15 @@
+#title {
+  margin-top: 80px;
+}
+#calendar_png {
+  margin-top: 70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#signup {
+  text-decoration-line: none;
+}
+a:visited {
+  color: #ffffff;
+}

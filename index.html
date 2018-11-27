@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="Index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="Index.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Class Room Calendar </a>
+        </div>
+        <form class="navbar-form navbar-right">
+          <div class="form-group">
+            <input type="text" placeholder="UserName" class="form-control" />
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              placeholder="Password"
+              class="form-control"
+            />
+          </div>
+          <button type="submit" class="btn btn-success" id="Signin">
+            Sign in
+          </button>
+          <button type="submit" class="btn btn-success" id="Signup">
+            <a href="SignUp.html">Sign up</a>
+          </button>
+        </form>
+      </div>
+    </nav>
+    <section>
+      <div class="jumbotron">
+        <div class="container">
+          <h1 id="title">Class Room Calendar</h1>
+          <p>"안녕하세요. 대덕소프트웨어 학생들을 위한 달력입니다."</p>
+          <p class="btn btn-primary btn-lg" href="#" role="button">
+            Go To Calendar >>
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="bottom"><img src="Image/Calendar.png" id="calendar_png" /></div>
+  </body>
+</html>
