@@ -36,7 +36,16 @@ $("#login").submit(function(event) {
     contentType: "application/json",
     data: JSON.stringify(data),
     success: function(data) {
+      alert("SignUp was success");
+      location.href = "index.html";
       console.log(data);
+    },
+    error: function(jqXHR) {
+      if (jqXHR.status == 409) {
+        alert("이미 있는 회원정보 입니다.");
+      } else if (jqXHR.status == 400) {
+        alert("회원정보를 정확하게 입력해 주세요.");
+      }
     }
   });
 });

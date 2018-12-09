@@ -10,17 +10,22 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
     />
     <link rel="stylesheet" type="text/css" href="Index.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="Index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="cookie/jquery.cookie.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
+      <span id="username" style="color: white; font-size: 2em;"></span>
+      <span id="grade" style="color: white; font-size: 2em;"></span>
+      <span id="cls" style="color: white; font-size: 2em;"></span>
+      <span id="number" style="color: white; font-size: 2em;"></span>
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#">Class Room Calendar </a>
+          <a class="navbar-brand" href="index.html">Class Room Calendar </a>
         </div>
         <form class="navbar-form navbar-right">
-            <a href="login.html"> <input type="button" class="btn btn-success" id="Signup" value="로그인"></input> </a>
+            <a href="login.html"> <input type="button" class="btn btn-success" id="Signin" value="로그인"></input> </a>
+            <input type="button" class="btn btn-success" id="Signout" value="로그아웃"></input>
             <a href="SignUp.html"> <input type="button" class="btn btn-success" id="Signup" value="회원가입"></input> </a>
         </form>
       </div>
@@ -31,12 +36,33 @@
           <h1 id="title">Class Room Calendar</h1>
           <p>"안녕하세요. 대덕소프트웨어 학생들을 위한 달력입니다."</p>
           <p class="btn btn-primary btn-lg" href="#" role="button">
-            Go To Calendar >>
+            <span id="Calendar">Go To Calendar >></span>
           </p>
         </div>
       </div>
     </section>
-    <div class="bottom"><img src="Image/Calendar.png" id="calendar_png" /></div>
+    <div class="bottom">
+      <img
+        src="https://elbauldelcodigo.com/img/diferencia-fechas-oracle.png"
+        id="calendar_png"
+      />
+    </div>
+    <div class="fixed">
+      <h1>Welcome</h1>
+  </div>
+    <div class="form">
+      <form action="website.php" method="POST">
+         <strong>Name:</strong>
+         <input type="text" name="user"/>
+         <strong>Gender<FONT COLOR="#FF0000">*</FONT></strong>
+         <select name="Gender[]" double="double">
+             <option value="Female">Female</option>
+             <option value="Male">Male</option>
+         </select>
+     </form>
+  </div>
     <script src="login.js"></script>
+    <script src="loaduser.js"></script>
+    <script src="Index.js"></script>
   </body>
 </html>
