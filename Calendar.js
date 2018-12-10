@@ -39,12 +39,13 @@ addCalendar = function(currentday, currentmonth, currentyear) {
   console.log(date);
   if (date.isValid()) {
     var plan = prompt("계획을 입력하세요.");
-
-    $("#calendar").fullCalendar("renderEvent", {
-      title: plan,
-      start: date,
-      allDay: true
-    });
+    if (plan !== null) {
+      $("#calendar").fullCalendar("renderEvent", {
+        title: plan,
+        start: date,
+        allDay: true
+      });
+    }
   } else {
     alert("Invalid date.");
   }

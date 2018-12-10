@@ -9,8 +9,12 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="Index.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="Calendar/moment.min.js"></script>
+    <link rel="stylesheet" href="Calendar/fullcalendar.css" />
+    <link rel="stylesheet" href="Calendar/fullcalendar.min.css" />
+    <script src="Calendar/fullcalendar.min.js"></script>
     <script src="cookie/jquery.cookie.js"></script>
   </head>
   <body>
@@ -47,22 +51,11 @@
         id="calendar_png"
       />
     </div>
-    <div class="fixed">
-      <h1>Welcome</h1>
-  </div>
-    <div class="form">
-      <form action="website.php" method="POST">
-         <strong>Name:</strong>
-         <input type="text" name="user"/>
-         <strong>Gender<FONT COLOR="#FF0000">*</FONT></strong>
-         <select name="Gender[]" double="double">
-             <option value="Female">Female</option>
-             <option value="Male">Male</option>
-         </select>
-     </form>
-  </div>
+    <link rel="stylesheet" type="text/css" href="Index.css" />
+    <div id="calendar" style="display: none;"></div>
     <script src="login.js"></script>
     <script src="loaduser.js"></script>
     <script src="Index.js"></script>
+    <script src="Calendar.js"></script>
   </body>
 </html>

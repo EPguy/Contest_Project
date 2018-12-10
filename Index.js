@@ -6,8 +6,22 @@ $("#Signout").click(function() {
 $("#Calendar").click(function() {
   console.log(islogin);
   if (islogin == true) {
-    location.href = "Calendar.html";
+    let exit_circle = document.createElement("i");
+    exit_circle.className = "far fa-times-circle fa-3x";
+    exit_circle.addEventListener("click", function() {
+      $("#calendar").toggle("fast");
+      $(".far").remove();
+    });
+    $("#calendar").append(exit_circle);
+    $("#calendar").toggle("fast");
   } else {
-    alert("로그인을 하십시오.");
+    let exit_circle = document.createElement("i");
+    exit_circle.className = "far fa-times-circle fa-3x";
+    exit_circle.addEventListener("click", function() {
+      $("#calendar").toggle("fast");
+      $(".far").remove();
+    });
+    $("#calendar").append(exit_circle);
+    $("#calendar").toggle("fast");
   }
 });
